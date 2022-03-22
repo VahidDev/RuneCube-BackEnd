@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  runecube:
+    image: ${DOCKER_REGISTRY-}runecube
+    build:
+      context: .
+      dockerfile: RuneCube/Dockerfile
