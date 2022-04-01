@@ -14,7 +14,7 @@ namespace Repository.Repository.Implementation
     public class GenericRepository<T> : IGenericRepository<T> where T : class,IEntity
     {
         private readonly AppDbContext context;
-        internal DbSet<T> dbSet;
+        protected DbSet<T> dbSet;
         protected readonly ILogger _logger;
 
         public GenericRepository(AppDbContext context, ILogger logger)
@@ -22,9 +22,10 @@ namespace Repository.Repository.Implementation
             this.context = context;
             this.dbSet = context.Set<T>();
             this._logger = logger;
+            dbSet = context.Set<T>();
         }
 
-        public virtual async Task<ICollection<T>> GetAllAsync()
+        public virtual async Task<IList<T>> GetAllAsync()
         {
             return await context.Set<T>().ToListAsync();
         }

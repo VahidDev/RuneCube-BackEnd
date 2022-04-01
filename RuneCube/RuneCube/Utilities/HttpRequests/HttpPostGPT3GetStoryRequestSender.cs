@@ -2,8 +2,6 @@
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using DomainModels.Dtos.StoryDtos;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 using RuneCube.Constants.GPT3Contants;
 using RuneCube.Utilities.GPT3;

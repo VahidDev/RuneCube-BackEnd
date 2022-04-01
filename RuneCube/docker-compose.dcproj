@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>7ca4c3d9-5525-4bfe-9176-268dddb17fd7</ProjectGuid>
+    <ProjectGuid>7e78dd5d-7637-4eda-9ff5-329ae4609332</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>runecube</DockerServiceName>

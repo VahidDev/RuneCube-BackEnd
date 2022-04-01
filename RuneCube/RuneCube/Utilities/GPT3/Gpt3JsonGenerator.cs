@@ -1,6 +1,4 @@
-﻿using System;
-using DomainModels.Dtos.StoryDtos;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RuneCube.Constants.GPT3Contants;
 
 namespace RuneCube.Utilities.GPT3

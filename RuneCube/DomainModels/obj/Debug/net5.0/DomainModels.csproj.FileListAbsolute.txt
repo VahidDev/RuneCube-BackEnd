@@ -2,7 +2,6 @@ C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\b
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\DomainModels.dll
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\ref\DomainModels.dll
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\DomainModels.pdb
-C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.csproj.AssemblyReference.cache
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.AssemblyInfoInputs.cache
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.AssemblyInfo.cs
@@ -10,3 +9,16 @@ C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\o
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.dll
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\ref\DomainModels.dll
 C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.pdb
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\DomainModels.deps.json
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\DomainModels.dll
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\ref\DomainModels.dll
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\bin\Debug\net5.0\DomainModels.pdb
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.AssemblyInfo.cs
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.dll
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\ref\DomainModels.dll
+C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.pdb
+C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\DomainModels\obj\Debug\net5.0\DomainModels.csproj.AssemblyReference.cache

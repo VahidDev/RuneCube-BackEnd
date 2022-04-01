@@ -7,7 +7,7 @@ namespace Repository.Services.Abstarction
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<ICollection<T>> GetAllAsync();
+        Task<IList<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
         Task<bool> AddAsync(T entity);
         Task<bool> AddRangeAsync(IList<T> entities);

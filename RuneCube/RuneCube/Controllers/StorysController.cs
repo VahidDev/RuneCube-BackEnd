@@ -28,7 +28,7 @@ namespace RuneCube.Controllers
         [HttpGet("list")]
         public IActionResult List()
         {
-            return Ok("Hello for testing!");
+            return Ok("Update Test!");
         }
     }
 }

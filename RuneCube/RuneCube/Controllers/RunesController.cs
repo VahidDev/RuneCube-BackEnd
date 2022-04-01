@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using DomainModels.Dtos.RuneDtos;
@@ -22,15 +23,8 @@ namespace RuneCube.Controllers
         [HttpGet]
         public async Task<IActionResult> GetRuneAsync()
         {
-            int allRuneCount=await _unitOfWork.Runes.GetCountAsync();
-            Random rnd = new();
-            int number = rnd.Next(1, allRuneCount);
-            Rune rune = await _unitOfWork.Runes.GetSkippedAsync(number, 1);
-            RuneDto dto = _mapper.Map<RuneDto>(rune);
-            dto.Count = 5;
-            dto.EachSideCount = 6;
-            dto.SidesCount = 60;
-            dto.MaxResponseTime = 12;
+            IList<RuneDto> dto = new List<RuneDto>();
+            dto = _mapper.Map<IList<RuneDto>>(await _unitOfWork.Runes.GetAllAsync());
             return Ok(dto);
         }
     }

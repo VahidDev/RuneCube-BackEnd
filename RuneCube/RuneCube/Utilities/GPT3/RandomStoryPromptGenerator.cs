@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DomainModels.Dtos.StoryDtos;
-using Microsoft.Extensions.Configuration;
 using RuneCube.Constants.GPT3Contants;
 using RuneCube.Utilities.HttpRequests;
 
