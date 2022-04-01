@@ -96,3 +96,6 @@ C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\Run
 C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\RuneCube\obj\Debug\net5.0\ref\RuneCube.dll
 C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\RuneCube\obj\Debug\net5.0\RuneCube.pdb
 C:\Users\User\OneDrive\Рабочий стол\C#Projects\Rune Cube\RuneCube\RuneCube\obj\Debug\net5.0\RuneCube.genruntimeconfig.cache
+C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\RuneCube\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\RuneCube\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\User\OneDrive\Рабочий стол\Rune Cube\RuneCube\RuneCube\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

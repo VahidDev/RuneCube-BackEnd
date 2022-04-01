@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using DomainModels.Models.Entities.Base;
 
 namespace Repository.Services.Abstarction
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class,IEntity
     {
         Task<IList<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);

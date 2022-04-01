@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,7 @@ namespace RuneCube
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddDbContext<AppDbContext>(options=> {
                 options.UseNpgsql(HerokuConnectionStringGetter.GetHerokuConnectionString(),builder=> {
                     builder.MigrationsAssembly(nameof(Repository));
