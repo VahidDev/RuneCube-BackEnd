@@ -21,13 +21,14 @@ namespace RuneCube.Controllers
         }
         [HttpPost]
         public async Task<bool> StorePlayers([FromBody] JObject json)
-        {  
+        {
             await _unitOfWork.LeaderBoards.AddAsync(
                 LeaderBoardGetter.GetLeaderBoard(
                 json["username1"].ToString(),
                 json["username2"].ToString(),
                 json["role1"].ToString(),
-                json["spent_time"].ToString()
+                json["spent_time"].ToString(),
+                json["is_finished"].ToString()
                 ));
             await _unitOfWork.CompleteAsync();
             return true;

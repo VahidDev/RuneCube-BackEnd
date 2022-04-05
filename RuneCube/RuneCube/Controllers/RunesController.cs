@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using DomainModels.Dtos.RuneDtos;
-using DomainModels.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Services.Abstarction;
+using RuneCube.Services;
 
 namespace RuneCube.Controllers
 {
@@ -25,6 +24,7 @@ namespace RuneCube.Controllers
         {
             IList<RuneDto> dto = new List<RuneDto>();
             dto = _mapper.Map<IList<RuneDto>>(await _unitOfWork.Runes.GetAllAsync());
+            dto = RuneServices.SetColors(dto,_mapper);
             return Ok(dto);
         }
     }

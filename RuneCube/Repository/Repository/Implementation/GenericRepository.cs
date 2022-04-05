@@ -70,7 +70,7 @@ namespace Repository.Repository.Implementation
         {
             try
             {
-                T item = await context.Set<T>().FindAsync(id);
+                T item = await dbSet.FindAsync(id);
                 item.IsDeleted = true;
                 item.DeletedDate = DateTime.Now;
                 return true;

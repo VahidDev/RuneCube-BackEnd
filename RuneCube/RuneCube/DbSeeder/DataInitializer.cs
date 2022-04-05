@@ -50,33 +50,10 @@ namespace RuneCube.DbSeeder
             if(!await _context.Runes.AnyAsync())
             {
                 await _context.Runes.AddRangeAsync(new List<Rune> { 
-                new Rune{Value="Cylinder",Color="Red"},
-                new Rune{Value="Cylinder",Color="Green"},
-                new Rune{Value="Cylinder",Color="Blue"},
-                new Rune{Value="Cylinder",Color="Yellow"},
-                new Rune{Value="Cylinder",Color="Pink"},
-                new Rune{Value="Cylinder",Color="Cyan"},
-
-                new Rune{Value="Torus",Color="Red"},
-                new Rune{Value="Torus",Color="Green"},
-                new Rune{Value="Torus",Color="Blue"},
-                new Rune{Value="Torus",Color="Yellow"},
-                new Rune{Value="Torus",Color="Pink"},
-                new Rune{Value="Torus",Color="Cyan"},
-
-                new Rune{Value="Cube",Color="Red"},
-                new Rune{Value="Cube",Color="Green"},
-                new Rune{Value="Cube",Color="Blue"},
-                new Rune{Value="Cube",Color="Yellow"},
-                new Rune{Value="Cube",Color="Pink"},
-                new Rune{Value="Cube",Color="Cyan"},
-
-                 new Rune{Value="Circle",Color="Red"},
-                new Rune{Value="Circle",Color="Green"},
-                new Rune{Value="Circle",Color="Blue"},
-                new Rune{Value="Circle",Color="Yellow"},
-                new Rune{Value="Circle",Color="Pink"},
-                new Rune{Value="Circle",Color="Cyan"},
+                new Rune{Value="Cylinder"},
+                new Rune{Value="Torus"},
+                new Rune{Value="Box"},
+                new Rune{Value="Sphere"},
                 });
             }
             await _context.SaveChangesAsync();

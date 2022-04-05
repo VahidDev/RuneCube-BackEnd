@@ -12,6 +12,7 @@ namespace Repository.Mapper
         {
             CreateMap<Story, StoryPromptDto>().ReverseMap();
             CreateMap<Rune, RuneDto > ().ReverseMap();
+            CreateMap<RuneDto, RuneDto > ().ReverseMap();
             CreateMap<LeaderBoard, LeaderBoardDto>().ReverseMap();
         }
     }
