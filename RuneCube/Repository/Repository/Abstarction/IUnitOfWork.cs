@@ -8,6 +8,7 @@ namespace Repository.Services.Abstarction
         IStoryRepository Stories { get; }
         IRuneRepository Runes{ get; }
         ILeaderBoardRepository LeaderBoards{ get; }
+        ISettingRepository Settings{ get; }
         Task CompleteAsync();
         void Dispose();
     }

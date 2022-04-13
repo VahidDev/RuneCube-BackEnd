@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
+using AutoMapper;
 using DomainModels.Dtos.SettingDtos;
 using Microsoft.AspNetCore.Mvc;
+using Repository.Services.Abstarction;
 
 namespace RuneCube.Controllers
 {
@@ -9,17 +11,18 @@ namespace RuneCube.Controllers
     [ApiController]
     public class SettingsController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetSettings()
+        private IUnitOfWork _unitOfWork;
+        private IMapper _mapper;
+        public SettingsController(IUnitOfWork unitOfWork,IMapper mapper)
         {
-            Random rnd = new ();
-            int randomNum = rnd.Next(8, 16);
-            SettingDto dto = new();
-            dto.MaxResponseTime = randomNum;
-            dto.Count = 5;
-            dto.EachSideCount = 6;
-            dto.SidesTime = randomNum * dto.Count;
-            return Ok(dto);
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetSettings()
+        {
+            return Ok(_mapper.Map<SettingDto>
+                (await _unitOfWork.Settings.FirstOrDefaultAsync(s=>!s.IsDeleted)));
         }
     }
 }

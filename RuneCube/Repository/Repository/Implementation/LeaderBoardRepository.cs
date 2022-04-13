@@ -18,7 +18,7 @@ namespace Repository.Repository.Implementation
         public async Task<IList<LeaderBoard>> GetAllOrderedByTimeAsync()
         {
             return (await dbSet.ToListAsync())
-                .OrderBy(l => TimeSpan.Parse(l.SpentTime)).ToList();
+                .OrderBy(l => TimeSpan.Parse(l.SpentTime)).OrderBy(l=>!l.IsFinished).ToList();
         }
     }
 }

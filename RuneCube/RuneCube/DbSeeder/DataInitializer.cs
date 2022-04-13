@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DomainModels.Dtos.SettingDtos;
 using DomainModels.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.DAL;
@@ -55,6 +56,16 @@ namespace RuneCube.DbSeeder
                 new Rune{Value="Box"},
                 new Rune{Value="Sphere"},
                 });
+            }
+            if(!await _context.Settings.AnyAsync())
+            {
+                int time = 15;
+                Setting setting = new();
+                setting.MaxResponseTime = time;
+                setting.Count = 5;
+                setting.EachSideCount = 3;
+                setting.SidesTime = time * setting.Count;
+                await _context.Settings.AddAsync(setting);
             }
             await _context.SaveChangesAsync();
 

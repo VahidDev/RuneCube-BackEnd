@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using Repository.DAL;
 using Repository.Mapper;
 using Repository.Repository.Implementation;
@@ -23,7 +24,8 @@ namespace RuneCube
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson();
+            services.AddControllers().AddNewtonsoftJson(options=> {
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;});
             services.AddDbContext<AppDbContext>(options=> {
                 options.UseNpgsql(HerokuConnectionStringGetter.GetHerokuConnectionString(),builder=> {
                     builder.MigrationsAssembly(nameof(Repository));
