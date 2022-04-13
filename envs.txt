@@ -1,4 +1,4 @@
-API_KEY=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
+API_KEY=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
 DATABASE_URL=postgres://upklyxkndahblb:d39c887f469994c8928f4ac63ec42e2f3ea70421da33b6bef98095727353a75f@ec2-3-212-45-192.compute-1.amazonaws.com:5432/da05kja2lhhkid
 Environment.SetEnvironmentVariable("API_KEY", "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");
 Environment.SetEnvironmentVariable("DATABASE_URL", "postgres://upklyxkndahblb:d39c887f469994c8928f4ac63ec42e2f3ea70421da33b6bef98095727353a75f@ec2-3-212-45-192.compute-1.amazonaws.com:5432/da05kja2lhhkid");

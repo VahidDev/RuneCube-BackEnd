@@ -1,3 +1,4 @@
 Secret.txt
 *.env
 /node_modules
+*.txt
