@@ -22,7 +22,8 @@ namespace RuneCube.Controllers
         public async Task<IActionResult> GetSettings()
         {
             return Ok(_mapper.Map<SettingDto>
-                (await _unitOfWork.Settings.FirstOrDefaultAsync(s=>!s.IsDeleted)));
+                (await _unitOfWork.Settings
+                .FirstOrDefaultAsync(s=>!s.IsDeleted)));
         }
     }
 }

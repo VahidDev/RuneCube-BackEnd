@@ -9,10 +9,10 @@ namespace RuneCube.Utilities.GPT3
 {
     public static class StartEndStoryPromptGenerator
     { 
-        public static async Task<StoryPromptDto> GenerateStartEndStoryPromptAsync(
-            IUnitOfWork unitOfWork,IMapper mapper)
+        public static async Task<StoryPromptDto> GenerateStartEndStoryPromptAsync
+            (IUnitOfWork unitOfWork,IMapper mapper)
         {
-            // Closing api usage (there is lots of stories in the database)
+            // I ceased api usage (there is lots of stories in the database)
             //StoryPromptDto dto = await RandomStoryPromptGenerator.GetRandomStoryPromptAsync();
             StoryPromptDto dto = new();
             //Check if dto is empty. If yes then take from database if not then add to db 

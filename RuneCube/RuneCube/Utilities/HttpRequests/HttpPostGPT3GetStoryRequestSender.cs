@@ -16,7 +16,8 @@ namespace RuneCube.Utilities.HttpRequests
             string url = Gpt3EndpointConstants.StoryGetterEndpoint;
             string key = Environment.GetEnvironmentVariable("API_KEY");
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + key);
-            StringContent data = new(Gpt3JsonGenerator.GetGpt3Json(prompt), Encoding.UTF8, "application/json");
+            StringContent data = new
+                (Gpt3JsonGenerator.GetGpt3Json(prompt), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync(url, data);
             string result = await response.Content.ReadAsStringAsync();
             JObject root = JObject.Parse(result);
